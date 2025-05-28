@@ -7,16 +7,33 @@
 //
 
 import UIKit
+import CLTypingLabel
 
 class WelcomeViewController: UIViewController {
-
-    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var titleLabel: CLTypingLabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-       
+        
+        // Basic animation using timers
+//        let titleText = "⚡️ FlashChat"
+//        var i: Double = 0
+//        
+//        
+//        titleLabel.text = ""
+//        
+//        for char in titleText {
+//            i += 1
+//            Timer.scheduledTimer(withTimeInterval: 0.1 * i, repeats: false, block: {(timer) in
+//                self.titleLabel.text?.append(char)
+//            })
+//            
+//        }
+        
+        titleLabel.text = K.appName
     }
     
-
+    
 }
